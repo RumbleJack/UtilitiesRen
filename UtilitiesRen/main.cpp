@@ -16,8 +16,5 @@ int main()
 	testSafeArray();
 	END_TIME_COST(TimeCostInMicrosecond);
 	cout << "Time Cost: " << TimeCostInMicrosecond << endl;
-
-
-
 	system("pause");
 }
