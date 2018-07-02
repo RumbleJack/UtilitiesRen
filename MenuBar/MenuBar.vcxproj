@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{72C57977-9B13-423D-AC8B-C536AA165D33}</ProjectGuid>
+    <RootNamespace>MenuBar</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../include;../ImgWndTools/ImgWndTools;../MathTools;../MiscTools</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\MenuBar.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>../ImgWndTools/debug;../MiscTools/debug;../MathTools/debug;../lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ImgWndTools.lib;MathTools.lib;MiscTools.lib</AdditionalDependencies>
+      <ImportLibrary>../lib/MenuBar.lib</ImportLibrary>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\MathTools;..\include;..\MiscTools;..\ImgWndTools\ImgWndTools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\MenuBar.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>../release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>MiscTools.lib;Geometry.lib;MathTools.lib;ImgWndTools.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="CMenuPanel.cd" />
+    <None Include="MenuBar.def" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\MenuBar.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AccelPanel.cpp" />
+    <ClCompile Include="BaseIcon.cpp" />
+    <ClCompile Include="EnumBar.cpp" />
+    <ClCompile Include="EnumItem.cpp" />
+    <ClCompile Include="IconList.cpp" />
+    <ClCompile Include="ImagePanel.cpp" />
+    <ClCompile Include="LogoPanel.cpp" />
+    <ClCompile Include="MenuBar.cpp" />
+    <ClCompile Include="MenuIcon.cpp" />
+    <ClCompile Include="MenuPanel.cpp" />
+    <ClCompile Include="ParamEditIcon.cpp" />
+    <ClCompile Include="ParameterPanel.cpp" />
+    <ClCompile Include="ParamIcon.cpp" />
+    <ClCompile Include="ParamIconAttr.cpp" />
+    <ClCompile Include="ParamIconReadOnly.cpp" />
+    <ClCompile Include="ParamIconWithSubEnumBar.cpp" />
+    <ClCompile Include="StatusPanel.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\GlobalMsgDef.h" />
+    <ClInclude Include="..\include\MenuIDDef.h" />
+    <ClInclude Include="..\include\SysDef.h" />
+    <ClInclude Include="AccelPanel.h" />
+    <ClInclude Include="BaseIcon.h" />
+    <ClInclude Include="BaseObjectList.h" />
+    <ClInclude Include="EnumBar.h" />
+    <ClInclude Include="EnumItem.h" />
+    <ClInclude Include="IconList.h" />
+    <ClInclude Include="ImagePanel.h" />
+    <ClInclude Include="LogoPanel.h" />
+    <ClInclude Include="MenuBar.h" />
+    <ClInclude Include="MenuDef.h" />
+    <ClInclude Include="MenuIcon.h" />
+    <ClInclude Include="MenuPanel.h" />
+    <ClInclude Include="ParamEditIcon.h" />
+    <ClInclude Include="ParameterPanel.h" />
+    <ClInclude Include="ParamIcon.h" />
+    <ClInclude Include="ParamIconAttr.h" />
+    <ClInclude Include="ParamIconReadOnly.h" />
+    <ClInclude Include="ParamIconWithSubEnumBar.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StatusPanel.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MenuBar.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="MenuBar.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

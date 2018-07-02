@@ -41,6 +41,7 @@ const STRUCT_LAYOUT DEFAULT_LAYOUT = {1, 1, 1, 1, 2, 1, 0} ; // 初始布局
 
 #define FLOAT_PRECISION 2
 
+// 按键前景，背景（选中，未选中）颜色
 #define ICON_TEXT_COLOR RGB(128, 128, 128) 
 #define HOT_ICON_BK_CLR	RGB(0, 255, 255) 
 #define UNSELECTED_ICON_BK_CLR	RGB(255, 255, 255)
@@ -58,6 +59,9 @@ const STRUCT_LAYOUT DEFAULT_LAYOUT = {1, 1, 1, 1, 2, 1, 0} ; // 初始布局
 #define WIDTH_POPUP_ENUM_ITEM 100
 #define HEIGHT_POPUP_ENUM_ITEM	30
 
+/*-------------------------------------------------------------------------------*/
+/*-----------------------------------以下还未读----------------------------------*/
+/*-------------------------------------------------------------------------------*/
 typedef enum
 {
 	WITHOUT_DATA,

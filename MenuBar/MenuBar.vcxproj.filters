@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="MenuBar.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="res\MenuBar.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="CMenuPanel.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MenuBar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuIcon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuPanel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseIcon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IconList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusPanel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LogoPanel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ParameterPanel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ImagePanel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ParamIcon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EnumBar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EnumItem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ParamIconAttr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ParamIconWithSubEnumBar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ParamIconReadOnly.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ParamEditIcon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AccelPanel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MenuBar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuDef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuIcon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuPanel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\GlobalMsgDef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseIcon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IconList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SysDef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\MenuIDDef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusPanel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LogoPanel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ParameterPanel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ImagePanel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamIcon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumBar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumItem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseObjectList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamIconAttr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamIconWithSubEnumBar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamIconReadOnly.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamEditIcon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AccelPanel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MenuBar.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
