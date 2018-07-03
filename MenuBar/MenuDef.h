@@ -285,15 +285,18 @@ const STRUCT_ICON ROOT_MENU[] = {ICON_FILE_SERVER,
 						} ;
 /*---------------------------------------------------------------------------------*/
 
+/*-------------------------------------------------------------------------------*/
+/*-----------------------------------参数栏定义----------------------------------*/
+/*-------------------------------------------------------------------------------*/
 enum ENUM_PARAM_ICON_STYLE
 {
 	VERT_DIVIDED,	// SHOW_PARAM_ONLY
 	HORZ_DIVIDED,	// SHOW_PARAM_ONLY
-	STATIC_INFO_ONLY,
-	SHOW_PARAM_ONLY,
-	EDIT_PARAM,
-	CHECK_PARAM,
-	RADIO_PARAM
+	STATIC_INFO_ONLY, 
+	SHOW_PARAM_ONLY, // 只读
+	EDIT_PARAM,		 // 编辑
+	CHECK_PARAM,	 // 复选
+	RADIO_PARAM		 // 单选
 }  ;
 
 enum ENUM_BK_BRUSH_STYLE
@@ -315,9 +318,18 @@ union UNION_SUB_ICON_ENUM_ITEM
 	const STRUCT_ENUM_ITEM *pEnumItem ;
 };
 
+/*----------- 单个参数栏属性 --------------*/
+/* id: 每个参数栏有一个独特的id */
+/* Style: 参数栏风格 */
+/* ParamType: 参数栏数据类型 */
+/* BkBrush: 参数栏背景 */
+/* pTitle: 参数栏字符串指针 */
+/* CntIcon_EnumItem:  参数栏下级项目数 */
+/* SubIcon_EnumItem   参数栏下级项目数组指针 或 当前级参数栏多栏指针*/
+/*-----------------------------------------*/
  struct STRUCT_PARAM_ICON
 {
-	WORD id ;
+	WORD id ;			
 	ENUM_PARAM_ICON_STYLE	Style ;
 	ENUM_PARAM_TYPE		ParamType ;
 	ENUM_BK_BRUSH_STYLE	BkBrush ;
@@ -369,7 +381,20 @@ const STRUCT_PARAM_ICON DEFAULT_PARAM_ICON_LINE_2[] = {PARAM_ECHO_AMP,
 														PARAM_ECHO_POS, 
 														PARAM_BEAM_DISTANCE
 													} ;
+/*-------------------------------------------------------------------------------*/
 
+
+
+/*-------------------------------------------------------------------------------*/
+/*-----------------------------------快捷键定义----------------------------------*/
+/*-------------------------------------------------------------------------------*/
+
+/*----------- 单个快捷键属性 --------------*/
+/* id: 每个参数栏有一个独特的id */
+/* pTitle: 参数栏字符串指针 */
+/* CntIcon_EnumItem:  参数栏下级项目数 */
+/* SubIcon_EnumItem   参数栏下级项目数组指针*/
+/*-----------------------------------------*/
 typedef struct
 {
 	WORD id ;
@@ -382,7 +407,7 @@ const STRUCT_ENUM_ITEM ACCEL_LAYOUT_ENUM[] = {{ID_ACCEL_LAYOUT_FULL_SCREEN, _T("
 											{ID_ACCEL_LAYOUT_NORMAL, _T("正常")}
 											} ;
 const STRUCT_ACCEL_ICON ACCEL_LAYOUT = {ID_ACCEL_LAYOUT, _T("布局"), ARRAYSIZE(ACCEL_LAYOUT_ENUM), ACCEL_LAYOUT_ENUM} ;
-
+	
 const STRUCT_ACCEL_ICON ACCEL_PROBE = {ID_ACCEL_PROBE, _T("组"), 0, NULL} ;
 const STRUCT_ACCEL_ICON ACCEL_CURSOR = {ID_ACCEL_CURSOR, _T("光标"), 0, NULL} ;
 const STRUCT_ACCEL_ICON ACCEL_ANGLE = {ID_ACCEL_ANGLE, _T("角度"), 0, NULL} ;
@@ -393,4 +418,5 @@ const STRUCT_ACCEL_ICON ACCEL_LIST[] = {ACCEL_LAYOUT,
 										ACCEL_ANGLE, 
 										ACCEL_SETTING 
 										} ;
+/*-------------------------------------------------------------------------------*/
 #endif

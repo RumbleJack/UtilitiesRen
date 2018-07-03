@@ -52,9 +52,6 @@
     <ClCompile Include="ParameterPanel.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="ImagePanel.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="ParamIcon.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -124,9 +121,6 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="ParameterPanel.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="ImagePanel.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="ParamIcon.h">
