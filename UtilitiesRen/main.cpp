@@ -16,5 +16,14 @@ int main()
 	testSafeArray();
 	END_TIME_COST(TimeCostInMicrosecond);
 	cout << "Time Cost: " << TimeCostInMicrosecond << endl;
+
+	// ²âÊÔtestGetFilePath
+	cout << "²âÊÔGetFilePath: "<< endl;
+	testGetFilePath();
+	cout << endl;
+	cout << "²âÊÔwGetFilePath: " << endl;
+	wtestGetFilePath();
+	cout << endl;
+
 	system("pause");
 }
