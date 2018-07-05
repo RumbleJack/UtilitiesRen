@@ -54,7 +54,7 @@ void wtestGetFilePath()
 	vector<wstring> filepath;
 
 	//获取该路径下的所有文件  
-	locale::global(locale(""));// 设置本地化字符环境
+	locale::global(locale(""));// 设置本地化字符环境(输出显示、与多字节字符集转化需要语句)
 	//locale::global(locale("C"));// 恢复默认字符环境
 	wGetFilesPath(folderpath, filepath);
 	int fpsize = filepath.size();
