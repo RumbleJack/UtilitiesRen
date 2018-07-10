@@ -1,11 +1,13 @@
 #include "stdafx.h"
 
+#include <tchar.h>
 #include <iostream>
 #include <iomanip>
 using namespace std;
 
 #include "PubMacroDef.h"
 #include "test.h"
+#include "BMPSaveExp.h"
 
 int main()
 {
@@ -24,6 +26,9 @@ int main()
 	cout << "²âÊÔwGetFilePath: " << endl;
 	wtestGetFilePath();
 	cout << endl;
+
+	// ²âÊÔÆÁÄ»½ØÍ¼
+	testGetScreenBMP("D:\\Users\\JackRen\\Documents\\GitHub\\MineViewer\\MineViewerFileSys\\img\\test.bmp");
 
 	system("pause");
 }
