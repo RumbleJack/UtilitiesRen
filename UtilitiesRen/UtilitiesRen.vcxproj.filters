@@ -27,6 +27,9 @@
     <ClCompile Include="GetFilePath.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="BMPSaveWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PubMacroDef.h">
@@ -44,7 +47,7 @@
     <ClInclude Include="GetFilePath.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="BMPSaveExp.h">
+    <ClInclude Include="BMPSaveWnd.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

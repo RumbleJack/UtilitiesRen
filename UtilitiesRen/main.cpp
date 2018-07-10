@@ -7,7 +7,7 @@ using namespace std;
 
 #include "PubMacroDef.h"
 #include "test.h"
-#include "BMPSaveExp.h"
+#include "BMPSaveWnd.h"
 
 int main()
 {
@@ -28,7 +28,7 @@ int main()
 	cout << endl;
 
 	// ²âÊÔÆÁÄ»½ØÍ¼
-	testGetScreenBMP("D:\\Users\\JackRen\\Documents\\GitHub\\MineViewer\\MineViewerFileSys\\img\\test.bmp");
+	SavaWndBMP("D:\\Users\\JackRen\\Documents\\GitHub\\MineViewer\\MineViewerFileSys\\img\\test.bmp");
 
 	system("pause");
 }

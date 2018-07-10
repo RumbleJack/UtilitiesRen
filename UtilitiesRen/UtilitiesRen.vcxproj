@@ -116,6 +116,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BMPSaveWnd.cpp" />
     <ClCompile Include="GetFilePath.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -124,7 +125,7 @@
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BMPSaveExp.h" />
+    <ClInclude Include="BMPSaveWnd.h" />
     <ClInclude Include="GetFilePath.h" />
     <ClInclude Include="PubMacroDef.h" />
     <ClInclude Include="SafeArray.h" />
